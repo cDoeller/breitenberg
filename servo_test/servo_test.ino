@@ -1,17 +1,24 @@
+
+// dervo library einbetten
 #include <Servo.h>
-Servo myservo;  // create servo object to control a servo
+// servo objekt erstellen
+Servo myservo;
 
 void setup() {
-  // put your setup code here, to run once:
-  myservo.attach(9);  // attaches the servo on pin 9 to the servo object
+  // servo motor an pin 9 anschliessen
+  myservo.attach(9);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
-  myservo.write(30);  // sets the servo position according to the scaled value
+  // servo auf 30 grad fahren
+  myservo.write(30);
+  // eine sekunde warten
   delay(1000);
-  myservo.write(100);  // sets the servo position according to the scaled value
+  // servo auf 100 grad fahren
+  myservo.write(100);
+  // eine sekunde warten
   delay(1000);
-  myservo.write(180);  // sets the servo position according to the scaled value
+  //servo auf 180 grad fahren
+  myservo.write(180);
+  // eine sekunde warten
   delay(1000);
-}
